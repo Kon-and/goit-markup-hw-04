@@ -395,15 +395,13 @@ li {
   width: 100%;
   height: 100%;
   color: var(--icon-color);
-  background-color: transparent;
-
   border: 1px solid var(--icons-color);
   border-radius: 4px;
 }
 
-.clients-item:hover,
-.clients-item:hover .clients-icons,
-.clients-link:focus .clients-item,
+.clients-link:hover,
+.clients-link:focus,
+.clients-link:hover .clients-icons,
 .clients-link:focus .clients-icons {
   border-color: var(--accent-color);
   fill: var(--accent-color);
