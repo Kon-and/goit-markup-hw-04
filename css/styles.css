@@ -96,6 +96,7 @@ li {
 
 .logo-dark {
   color: #000000;
+  margin-right: 93px;
 }
 
 .header-list {
@@ -103,7 +104,6 @@ li {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   display: flex;
-  margin-left: 93px;
 }
 
 .header-item + .header-item {
@@ -278,7 +278,7 @@ li {
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .team-item {
