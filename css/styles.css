@@ -44,7 +44,7 @@ button {
   /* outline: 2px solid red; */
 }
 
-section {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -88,6 +88,11 @@ li {
 .header-cont-item:hover .header-socials-icons,
 .header-cont-text:focus .header-socials-icons {
   fill: var(--accent-color);
+}
+
+.header-cont-text {
+  display: flex;
+  align-items: center;
 }
 
 .header-socials-icons {
@@ -150,6 +155,10 @@ li {
     url('../images/background.jpg');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-text {
@@ -239,8 +248,12 @@ li {
 .advantage-icons-box {
   background-color: var(--main-second-color);
   border-radius: 4px;
-  padding: 25px 100px;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 270px;
+  min-height: 120px;
 }
 
 /* ---------------------- WHAT WE'RE DOING ---------------------- */
@@ -340,10 +353,6 @@ li {
   justify-content: center;
 }
 
-.team-socials-link {
-  padding: 10px;
-}
-
 .team-socials-item + .team-socials-item {
   margin-left: 10px;
 }
@@ -365,7 +374,7 @@ li {
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .clients-list {
@@ -417,11 +426,16 @@ li {
 
 .address-socials {
   display: flex;
+  align-items: baseline;
+}
+
+.socials-footer {
+  margin-left: 70px;
 }
 
 .footer-socials-list {
   display: flex;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .footer-socials-item + .footer-socials-item {
@@ -431,7 +445,6 @@ li {
 .logo-footer {
   padding: 0;
   font-style: normal;
-  margin-right: 156px;
   margin-bottom: 20px;
 }
 
@@ -461,7 +474,6 @@ li {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   color: var(--main-color);
-  padding-top: 12px;
 }
 
 .footer-socials-icons {
@@ -536,10 +548,13 @@ li {
   margin-left: 0;
 }
 
-.projects-items:hover {
+.projects-link {
+  display: block;
+}
+
+.projects-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
 }
 
 .projects-pre-text {
